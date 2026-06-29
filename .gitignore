@@ -1,0 +1,19 @@
+# termsystem is the ecosystem workspace root: clone the member repos in here as
+# subdirectories (see clone-all.sh) and run your AI agent with this dir as cwd so
+# it has the whole ecosystem in view. These checkouts are NOT tracked by
+# termsystem itself — each is its own repo.
+
+# Shared libraries
+/termtheme/
+/termnav/
+/termchrome/
+/termintro/
+
+# TUIs
+/passage/
+/ssherpa/
+/dangit/
+
+# Local scratch
+*.tmp
+.DS_Store
