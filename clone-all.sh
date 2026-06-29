@@ -9,6 +9,7 @@ base="${TERMSYSTEM_GIT_BASE:-git@github.com:0xbenc}"
 
 cd "$(dirname "$0")"
 for r in "${repos[@]}"; do
+  if [ -e "$r" ] && [ ! -d "$r/.git" ]; then echo "==> $r: exists but isn't a git repo — skipping"; continue; fi
   if [ -d "$r/.git" ]; then
     echo "==> $r: updating"
     git -C "$r" pull --ff-only

@@ -87,6 +87,10 @@ brew install --cask 0xbenc/tap/dangit
 # or: go install github.com/0xbenc/<app>/cmd/<app>@latest
 ```
 
+> These are intentionally **casks**, not formulae — the tap ships goreleaser-built
+> release binaries (not from-source builds), so `--cask` is correct here. Don't
+> "fix" it to a formula.
+
 The libraries are normal Go modules:
 
 ```sh
