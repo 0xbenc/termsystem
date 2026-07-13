@@ -27,7 +27,7 @@ cd termsystem
 | Module | Role | Depends on | Latest |
 |---|---|---|---|
 | [**termtheme**](https://github.com/0xbenc/termtheme) | Semantic SGR **roles** + a portable `.theme` interchange format + render helpers (and pure env/path helpers). The must-agree core. | — (pure) | `v0.2.0` |
-| [**termnav**](https://github.com/0xbenc/termnav) | File/namespace **navigation** + list-windowing engine, the fuzzy **matcher**, and match **highlighting**. | termtheme | `v0.2.0` |
+| [**termnav**](https://github.com/0xbenc/termnav) | File/namespace **navigation** + list-windowing engine, the fuzzy **matcher**, and match **highlighting**. | termtheme | `v0.2.1` |
 | [**termchrome**](https://github.com/0xbenc/termchrome) | Opinionated **chrome widgets**: box geometry, canonical footer, key/value rows, locale-aware glyphs/spinner, countdown. | termtheme | `v0.1.0` |
 | [**termintro**](https://github.com/0xbenc/termintro) | A Tron/ENCOM-style **boot animation** played once before a TUI's UI. | — (pure) | `v0.1.1` |
 
@@ -35,9 +35,9 @@ cd termsystem
 
 | App | What it does | Latest |
 |---|---|---|
-| [**passage**](https://github.com/0xbenc/passage) | GNU Pass as the source of truth, with a fast TUI for daily secret retrieval. | `v0.8.1` |
-| [**ssherpa**](https://github.com/0xbenc/ssherpa) | The SSH config you already have, with a map and an escape rope. | `v1.20.1` |
-| [**dangit**](https://github.com/0xbenc/dangit) | Find the git repos you forgot about — *dang it.* | `v0.2.0` |
+| [**passage**](https://github.com/0xbenc/passage) | GNU Pass as the source of truth, with a fast TUI for daily secret retrieval. | `v0.8.2` |
+| [**ssherpa**](https://github.com/0xbenc/ssherpa) | The SSH config you already have, with a map and an escape rope. | `v1.20.2` |
+| [**dangit**](https://github.com/0xbenc/dangit) | Find the git repos you forgot about — *dang it.* | `v0.2.1` |
 
 ## How it fits together
 
