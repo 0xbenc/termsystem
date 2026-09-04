@@ -133,6 +133,6 @@ survives into a released `go.mod`** (goreleaser `go mod verify` enforces it).
 
 | termtheme | termnav | termchrome | termintro | passage | ssherpa | dangit | bitty |
 |---|---|---|---|---|---|---|---|
-| v0.2.0 | v0.2.1 | v0.1.0 | v0.1.1 | v0.8.2 | v1.20.2 | v0.2.1 | unreleased |
+| v0.2.0 | v0.2.1 | v0.1.0 | v0.1.1 | v0.8.2 | v1.20.2 | v0.2.1 | v0.1.0 |
 
 > Keep this table current when cutting releases (it's the quickest lockstep check).

@@ -38,7 +38,7 @@ cd termsystem
 | [**passage**](https://github.com/0xbenc/passage) | GNU Pass as the source of truth, with a fast TUI for daily secret retrieval. | `v0.8.2` |
 | [**ssherpa**](https://github.com/0xbenc/ssherpa) | The SSH config you already have, with a map and an escape rope. | `v1.20.2` |
 | [**dangit**](https://github.com/0xbenc/dangit) | Find the git repos you forgot about — *dang it.* | `v0.2.1` |
-| [**bitty**](https://github.com/0xbenc/bitty) | An interactive Conway's Game of Life editor and simulator. | unreleased |
+| [**bitty**](https://github.com/0xbenc/bitty) | An interactive Conway's Game of Life editor and simulator. | `v0.1.0` |
 
 ## How it fits together
 
