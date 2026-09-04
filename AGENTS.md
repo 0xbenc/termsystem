@@ -19,7 +19,7 @@ they're missing), each its own independent git repo:
 ```
 termsystem/            ← you are here (cwd); tracks only the docs
 ├─ termtheme/  termnav/  termchrome/  termintro/   ← shared libraries
-└─ passage/    ssherpa/  dangit/                   ← TUIs
+└─ passage/    ssherpa/  dangit/  bitty/            ← TUIs
 ```
 
 Edits happen **inside a member repo's directory**. termsystem itself only holds
@@ -48,6 +48,7 @@ docs — don't put app/library code here.
 - **ssherpa** — SSH manager (home picker → supervised PTY sessions; the live
   overlay keeps a `Strip` transcript policy).
 - **dangit** — git-repo sweeper (scan → browse → resolve).
+- **bitty** — interactive Conway's Game of Life editor and simulator.
 
 Dependency graph and the STYLE-vs-FLOW two-layer model: see
 [`docs/architecture.md`](docs/architecture.md).
@@ -108,7 +109,7 @@ go mod edit -dropreplace=github.com/0xbenc/<mod>
 go mod tidy && go test ./...   # commit: "<app>: pin <mod> vX.Y.Z (drop local replace)"
 ```
 
-Keep passage, ssherpa, dangit on **identical** lib versions (lockstep). Update
+Keep passage, ssherpa, dangit, bitty on **identical** lib versions (lockstep). Update
 the version matrix in `docs/architecture.md` when you cut releases.
 
 **Add a feature to an app:** keep the domain logic local; reach for the shared

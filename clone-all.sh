@@ -4,7 +4,7 @@
 # The checkouts are gitignored — each stays its own independent repo.
 set -euo pipefail
 
-repos=(termtheme termnav termchrome termintro passage ssherpa dangit)
+repos=(termtheme termnav termchrome termintro passage ssherpa dangit bitty)
 base="${TERMSYSTEM_GIT_BASE:-git@github.com:0xbenc}"
 
 cd "$(dirname "$0")"
