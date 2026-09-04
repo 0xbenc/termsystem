@@ -2,7 +2,7 @@
 
 This project's agent instructions live in **[`AGENTS.md`](AGENTS.md)** — the
 operating manual for the termsystem ecosystem (the shared `term*` libraries and
-the `passage` / `ssherpa` / `dangit` TUIs). It is the single source of truth;
+the `passage` / `ssherpa` / `dangit` / `bitty` TUIs). It is the single source of truth;
 this file just points Claude Code at it so the rules don't drift between two
 copies.
 

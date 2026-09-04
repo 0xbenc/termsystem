@@ -11,12 +11,12 @@ termtheme (leaf; no bubbletea)        termintro (leaf; pure stdlib, no deps)
    ├──► termnav   (+ bubbletea in teax/source subpkgs)
    └──► termchrome (termtheme only; no bubbletea)
                          │
-   termtheme, termnav, termchrome, termintro  ──►  passage · ssherpa · dangit
+   termtheme, termnav, termchrome, termintro  ──►  passage · ssherpa · dangit · bitty
 ```
 
 - **termtheme** and **termintro** are independent leaves.
 - **termnav** and **termchrome** depend on **termtheme** only.
-- The three apps depend on all four.
+- The four apps depend on all four.
 - Pins are **semver, no `replace`** in released `go.mod`. Because a consumer can
   only build against a tag already on the module proxy, the tag order is enforced
   mechanically (see Release lifecycle).
@@ -91,6 +91,8 @@ per-app last-seen-version record in local state.
 - **ssherpa** — SSH manager; a home picker that launches supervised PTY sessions
   (its live-overlay keeps a `Strip` transcript policy).
 - **dangit** — git-repo sweeper; a scan→browse model with a resolve action.
+- **bitty** — an interactive Conway's Game of Life editor and simulator; it
+  uses termnav's windowing math to pan over worlds larger than the terminal.
 
 ## Release lifecycle
 
@@ -112,7 +114,7 @@ git commit -m "<app>: pin <mod> vX.Y.Z (drop local replace)"
 
 Order: `termtheme`/`termintro` → `termnav`/`termchrome` → apps. **No `replace`
 survives into a released `go.mod`** (goreleaser `go mod verify` enforces it).
-**Pin lockstep:** passage, ssherpa, and dangit pin identical lib versions.
+**Pin lockstep:** passage, ssherpa, dangit, and bitty pin identical lib versions.
 
 ## Conformance invariants
 
@@ -129,8 +131,8 @@ survives into a released `go.mod`** (goreleaser `go mod verify` enforces it).
 
 ## Version matrix (current)
 
-| termtheme | termnav | termchrome | termintro | passage | ssherpa | dangit |
-|---|---|---|---|---|---|---|
-| v0.2.0 | v0.2.1 | v0.1.0 | v0.1.1 | v0.8.2 | v1.20.2 | v0.2.1 |
+| termtheme | termnav | termchrome | termintro | passage | ssherpa | dangit | bitty |
+|---|---|---|---|---|---|---|---|
+| v0.2.0 | v0.2.1 | v0.1.0 | v0.1.1 | v0.8.2 | v1.20.2 | v0.2.1 | unreleased |
 
 > Keep this table current when cutting releases (it's the quickest lockstep check).

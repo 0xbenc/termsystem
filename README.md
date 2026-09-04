@@ -17,7 +17,7 @@ This repo is two things:
 ```sh
 git clone git@github.com:0xbenc/termsystem.git
 cd termsystem
-./clone-all.sh        # clones the 7 member repos as gitignored subdirs
+./clone-all.sh        # clones the 8 member repos as gitignored subdirs
 ```
 
 ## The pieces
@@ -38,6 +38,7 @@ cd termsystem
 | [**passage**](https://github.com/0xbenc/passage) | GNU Pass as the source of truth, with a fast TUI for daily secret retrieval. | `v0.8.2` |
 | [**ssherpa**](https://github.com/0xbenc/ssherpa) | The SSH config you already have, with a map and an escape rope. | `v1.20.2` |
 | [**dangit**](https://github.com/0xbenc/dangit) | Find the git repos you forgot about — *dang it.* | `v0.2.1` |
+| [**bitty**](https://github.com/0xbenc/bitty) | An interactive Conway's Game of Life editor and simulator. | unreleased |
 
 ## How it fits together
 
@@ -54,7 +55,7 @@ cd termsystem
           └───────────┴────┬─────┴──────────────┘
                            │
               ┌────────────┼────────────┐
-           passage      ssherpa       dangit
+        passage      ssherpa       dangit       bitty
 ```
 
 Two layers keep the apps aligned without making them identical:
@@ -84,6 +85,7 @@ palettes (brand), its shell composition, and its overflow policy.
 brew install --cask 0xbenc/tap/passage
 brew install --cask 0xbenc/tap/ssherpa
 brew install --cask 0xbenc/tap/dangit
+brew install --cask 0xbenc/tap/bitty
 # or: go install github.com/0xbenc/<app>/cmd/<app>@latest
 ```
 
